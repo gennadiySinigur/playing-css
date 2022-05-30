@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+}
+
+.container {
+  /*position: relative;*/
+}
+
+ul li {
+  list-style: none;
+}
+
+.nav {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.menu-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 1rem;
+  line-height: 1;
+}
+
+.menu:hover {
+  text-decoration: underline;
+}
+
+.sub-menu {
+  display: none;
+  margin-top: 1rem;
+  position: absolute;
+  right: 7px;
+  top: 2rem;
+}
+
+li:last-child {
+  color: red;
+}
+
+.close-icon {
+  display: none;
+  height: 26px;
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+.search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
